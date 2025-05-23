@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PGY-2 Domination Playbook</title>
+<style>
+/* —— VARIABLES —— */
+:root{
+  --bg:#fdfdfd;
+  --fg:#202124;
+  --accent:#0061b0;
+  --border:#d5d7da;
+  --radius:.6rem;
+  --gap:1.2rem;
+  --font:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+/* —— RESET —— */
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:var(--font);
+  line-height:1.55;
+  background:var(--bg);
+  color:var(--fg);
+  padding:2rem clamp(1rem,4vw,4rem);
+}
+/* —— TYPOGRAPHY —— */
+h1{font-size:clamp(1.8rem,4vw,2.3rem);margin-bottom:.8rem}
+p,li{margin:.45rem 0}
+blockquote{margin:.6rem 0 .6rem 1rem;color:#444;font-style:italic}
+
+/* —— ACCORDION —— */
+.accordion{
+  width:100%;
+  text-align:left;
+  padding:1rem;
+  font-weight:600;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  cursor:pointer;
+  transition:background .2s;
+  margin-top:var(--gap);
+}
+.accordion:hover{background:#f0f9ff}
+.accordion::after{
+  content:'›';
+  float:right;
+  transform:rotate(0);
+  transition:transform .2s;
+}
+.accordion.active::after{transform:rotate(90deg)}
+.panel{
+  overflow:hidden;
+  max-height:0;
+  transition:max-height .3s ease;
+  border-left:3px solid var(--accent);
+  margin-top:.2rem;
+  background:#fff;
+  border-radius:0 0 var(--radius) var(--radius);
+}
+.panel-inner{padding:1rem 1.25rem 1.25rem 1.25rem}
+ul{padding-left:1.2rem}
+ul ul{margin-top:.3rem}
+li{list-style:disc}
+
+/* —— STEPPER CARDS FOR CORE STRATEGY —— */
+.stepper{
+  display:grid;
+  gap:1rem;
+  margin-top:.8rem;
+}
+@media(min-width:600px){
+  .stepper{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+}
+.step-card{
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  background:#fcfcff;
+  padding:1rem 1rem .8rem 1rem;
+}
+.step-card h4{margin-top:0;font-size:1rem;color:var(--accent)}
+.step-card p, .step-card ul{margin:.4rem 0}
+
+/* —— SPACING BETWEEN ACCORDIONS —— */
+section+section{margin-top:var(--gap)}
+</style>
+</head>
+<body>
+
+<h1>PGY-2 Domination Playbook</h1>
+<p>Tap any heading to expand. Only one stays open at a time for cognitive ease.</p>
+
+<!-- Opening Letter -->
+<button class="accordion">Opening Letter</button>
+<div class="panel"><div class="panel-inner">
+  <p>Hey babe, I couldn’t finish all of my thoughts but here are my suggestions on how to reverse your situation. I love you&#9829, and I know you’re hurt. But I also know you’re strong and brilliant. The truth is, you had a sucky first year not because you’re bad at medicine. You slipped because no one taught you how the unspoken game works &#128148, how to read people, move with the system, and lead from within. You were just unarmed in a game you didn’t realize was being played. So you should play to win now. Your hospital is <b>a social battlefield</b></p>
+</div></div>
+
+<!-- Mindset -->
+<button class="accordion">Mindset</button>
+<div class="panel"><div class="panel-inner">
+  <blockquote>“I am not immature. I am untrained. I came in thinking it’s about knowledge and kindness. But this is a social battlefield. I need confidence, alliances, performance optics to conquer this terrain.”</blockquote>
+  <p>Every day, act from that posture. Even if your heart is bleeding, even if you feel like crying. You fake it for 12 hours, then collapse when you are at home. That’s the deal.</p>
+</div></div>
+
+<!-- Resources & Strengths -->
+<button class="accordion">Resources & Strengths</button>
+<div class="panel"><div class="panel-inner">
+  <ul>
+    <li><strong>Jake (Chief):</strong> Already helped you; potential mentor/sponsor.</li>
+    <li><strong>Roppelt (PD):</strong> Initially supportive, still seems diplomatically neutral; can be re-engaged.</li>
+    <li><strong>Batch Support:</strong> Intern cohort (Adriel, Shan, Randy) are emotionally supportive and even shocked by how you are being treated.</li>
+    <li><strong>Self-Awareness:</strong> You deep insight into your issues, are motivated, and don't shy from hard work.</li>
+  </ul>
+</div></div>
+
+<!-- Emotional Fallout -->
+<button class="accordion">Manage the Emotional Fallout</button>
+<div class="panel"><div class="panel-inner">
+  <ul>
+    <li><strong>Separate Emotion from Action:</strong> You’re hurt—acknowledge it, but don’t let it hijack your day-to-day behavior or overshadow your proactive changes.</li>
+    <li><strong>Small Wins First:</strong> Each time you nail a concise presentation or produce a quick resource that helps others, you’ll chip away at the negative self-talk.</li>
+    <li><strong>Don’t seek justice—create value.</strong> The system isn’t fair, but it rewards perceived leadership.</li>
+    <li><strong>You are not behind.</strong> You were just blind to how the game is played. Now you see.</li>
+  </ul>
+</div></div>
+
+<!-- Ignore Drama -->
+<button class="accordion">Don’t Waste Energy on Andre / Sundus</button>
+<div class="panel"><div class="panel-inner">
+  <ul>
+    <li><strong>Ignore The Drama:</strong> He may never champion you, and that’s fine. Focus on building alliances where you already have traction (Jake, PD, supportive co-residents).</li>
+    <li><strong>Professional Neutrality:</strong> Be polite, helpful, but don’t rely on him or try to “win him over.” Your success can come from other angles.</li>
+  </ul>
+</div></div>
+
+<!-- Anchoring Bias -->
+<button class="accordion">Anchoring Bias — Day-1 of Next Medicine Block</button>
+<div class="panel"><div class="panel-inner">
+  <p>People remember how you do in the first week. That first evaluation becomes the starting point others use to judge you later.</p>
+  <p>Manufacture an unmistakably high-impact first week on the upcoming medicine block (tight presentations, pre-rounded notes ready, one teach-back to the team). Make your first week amazing! Change how they see you from the start.</p>
+</div></div>
+
+<!-- Immediate Confidence -->
+<button class="accordion">Project Immediate Confidence</button>
+<div class="panel"><div class="panel-inner">
+  <ul>
+    <li>Stop signaling doubt or fear. Practice quick, concise presentations. Even if you feel shaky inside, speak with a steady tone and act.</li>
+    <li>Remind yourself: There’s always an attending double-checking. You won’t kill a patient by sounding confident 😏</li>
+  </ul>
+</div></div>
+
+<!-- Core Strategy -->
+<button class="accordion">Core Strategy to Dominate PGY-2</button>
+<div class="panel"><div class="panel-inner">
+
+  <div class="stepper">
+
+    <!-- Card 1 -->
+    <div class="step-card">
+      <h4>1. Rebuild Perception with Visibility and Leadership</h4>
+      <p><strong>Mindset:</strong> Act like a PGY-3 Chief Resident before you’re given the title.<br>
+      <em>Rule of thumb:</em> You’re being watched by someone every single day. Own it.</p>
+      <h5>Act Like Chief Daily:</h5>
+      <ul>
+        <li>Take initiative, solve problems before others ask.</li>
+        <li>Present confidently, even when uncertain. Speak like you’re in control.</li>
+      </ul>
+      <p>By late PGY-2, you want this story circulating:<br>
+      <em>“She started off slow, but wow—she really figured it out. Took control, led from the front, helped the juniors, impressed the chiefs. That’s who I’d want leading my team.”</em></p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="step-card">
+      <h4>2. Proof-of-Leadership Artifact (Immediate)</h4>
+      <p>Record a 4-min orientation screencast for incoming interns (Shows initiative without asking permission.)</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="step-card">
+      <h4>3. Social Currency Loop (ongoing)</h4>
+      <p>Once per week share a concise pearls-of-the-week email: one guideline change or one EMR shortcut. CC chiefs. Builds a reputation for making colleagues’ lives easier.</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="step-card">
+      <h4>4. Build a Public Record of Value-Creation</h4>
+      <ul>
+        <li><strong>Create Intern Teaching Content:</strong>
+          <ul>
+            <li>Record short videos on common workflows, survival tips.</li>
+            <li>Share only with Jake at first → let him forward or praise.</li>
+            <li>Aim: Become “the intern whisperer” in the eyes of seniors.</li>
+          </ul>
+        </li>
+        <li><strong>Small, Consistent Leadership Projects:</strong>
+          <ul>
+            <li>Monthly: propose mini-projects (e.g., “EBM Crash Course”, “Top 5 ICU Pearls”).</li>
+            <li>Include interns, let Jake be “in the loop” (never Sundus or Andre).</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div><!-- /stepper -->
+
+</div></div>
+
+<!-- Plug Gaps -->
+<button class="accordion">Plug the Gaps from PGY-1</button>
+<div class="panel"><div class="panel-inner">
+  <h4>Rotation Recovery Plan</h4>
+  <p>List all rotations where evaluations were weak (e.g., floors, ICU). Proactively tell Jake: “I’m making it a personal mission to ace these.”</p>
+  <h4>Feedback Weaponization</h4>
+  <p>After each rotation, ask Jake (or attending) for 2 specific “what worked” and 2 “do better.”</p>
+  <p>Whenever you talk to Roppelt like at a dinner or social event or if talking about eval or doing a rotation with her. You should show her you’re tracking progress month to month.</p>
+</div></div>
+
+<!-- Relationship Leverage -->
+<button class="accordion">Tactical Relationship Leverage</button>
+<div class="panel"><div class="panel-inner">
+  <h4>Primary Node: Jake</h4>
+  <ul>
+    <li>Treat Jake like your talent agent. Make his job easier.</li>
+    <li>Show him your work, not your complaints.</li>
+    <li>Once he’s impressed, and only then, emotionally open up about Andre.</li>
+  </ul>
+  <h4>Secondary Node: Roppelt</h4>
+  <ul>
+    <li>Don’t spam her. Instead:</li>
+    <li>Let the meeting between Roppelt and you “naturally” occur.</li>
+    <li>Whenever you talk to Roppelt like at a dinner or social event or if talking about eval or doing a rotation with her. You should show her you’re tracking progress month to month.</li>
+    <li>Go in with recorded work like how you have recorded your performance.</li>
+    <li>See if she agrees by the end of it to do a more regular check-in with you</li>
+    <li>Show you are working well with people she already likes.</li>
+  </ul>
+</div></div>
+
+<!-- Peer Network -->
+<button class="accordion">Peer Network Activation</button>
+<div class="panel"><div class="panel-inner">
+  <p>Use Adriel, Randy, Shan to vouch for you in subtle ways (i.e., “Oh Noha helped me so much” to others). If you trust them, then even ask them to be like this. Like “subtly” mention your name as much as they can.</p>
+</div></div>
+
+<!-- Mental Fortification -->
+<button class="accordion">Internal Mental Fortification</button>
+<div class="panel"><div class="panel-inner">
+  <h4>Emotional Recovery Plan</h4>
+  <p>Separate emotions from strategy. Cry, then compartmentalize.</p>
+  <h4>Communication “ACTING” Coach</h4>
+  <p>In your head, pick a well-spoken resident and mimic their presentation style. Mirror the tone, sentence structure, and directness.</p>
+</div></div>
+
+<script>
+/* Progressive-disclosure accordion (Hick’s + Fitts). */
+document.querySelectorAll(".accordion").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    const open=document.querySelector(".accordion.active");
+    if(open&&open!==btn){
+      open.classList.remove("active");
+      open.nextElementSibling.style.maxHeight=null;
+    }
+    btn.classList.toggle("active");
+    const panel=btn.nextElementSibling;
+    panel.style.maxHeight=btn.classList.contains("active")?panel.scrollHeight+"px":null;
+  });
+});
+</script>
+</body>
+</html>
